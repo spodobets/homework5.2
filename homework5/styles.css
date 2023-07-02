@@ -13,6 +13,11 @@ header {
    
 }
 
+.header_mob, .section4_mob {
+    display: none;
+}
+
+
 @media screen and (max-width: 1200px) {
     
     header {
@@ -107,28 +112,88 @@ ul {
     display: flex;
 }
 
-.section4 {
-    display: flex;
+div.section4 {
+    position: absolute;
+    display: inline;
 }
 
-.sneakers3 {
-    width: 606px;
-    margin-top: 122px;
-    margin-bottom: 122px;
-    margin-left: 99px;
+div.sneakers3  {
+    position: relative;
+    display: inline;
+    top: 122px;
+    left: 99px;
+    float: left;
 } 
 
-.text_1 {
-    font-size: 40px;
-    width: 500px;
-    margin-top: 122px;
-    margin-left: 136px;
+.text_section {
+    display: inline;
+    position: relative;
+    top: 122px;
+    left: 136px;
+}
 
+
+.text_1 {
+    
+    font-size: 40px;
 }
 
 .text_2 {
     font-size: 24px;
-    width: 500px;
     margin-top: 64px;
-    margin-left: 136px;
+}
+
+
+@media screen and (max-width: 375px) {
+    header {
+        margin: 20px;
+        display: flex;
+        justify-content: space-between;
+        gap: 22px;
+        width: vw;
+    }
+    .header_mob{
+        display: flex;
+        font-size: 16px;
+    }
+    ul {
+        display: none;
+    }
+    .logo {
+        margin: 0px;
+    }
+
+    main {
+        display: flex;
+        flex-direction: column;
+        margin: 20px;
+        align-items: flex-start;
+    }
+
+    .text3{
+        height: 377px;
+    }
+
+    .text2 {
+        margin-bottom: 50px;
+    }
+    div.section4 {
+        display: none;
+    }
+    div.section4_mob {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .section3_mob, .text_1_mob, .text_2_mob, .sneakers3_mob {
+        margin-top: 20px;
+
+    }
+
+    .text_1_mob {
+        font-size: 24px;
+    }
+     .text_2_mob {
+        font-size: 20px;
+    }
 }
